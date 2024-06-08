@@ -1,0 +1,135 @@
+/* Reset from Josh Cumeau */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* My CSS */
+
+:root {
+    --primary_400: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%)
+}
+
+body {
+    background-color: var(--primary_400);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.preview-card {
+    background-color: var(--white);
+    width: 336px;
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: black;
+    padding: 20px;
+    margin-top: 5%;
+    box-shadow: 7px 7px var(--black);
+    border: 1.5px solid var(--black);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.tag {
+    background-color: var(--primary_400);
+    width: 30%;
+    padding: 5px 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#design {
+    border-radius: 1em;
+}
+
+h1 {
+    line-height: 1em;
+    font-size: 1.5em;
+}
+
+.bold-text {
+    font-weight: 800;
+}
+
+.description {
+    color: var(--grey);
+}
+
+h1:hover,
+focus {
+    color: var(--primary_400);
+    cursor: pointer;
+}
+
+.article-link {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
